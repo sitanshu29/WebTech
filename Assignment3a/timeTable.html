@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Time Table BTech ECE 3-2</h1>
+        <h2>Academic Year 2021-22</h2>
+    </div>
+
+    <h1>Time Table</h1>
+    <div class="TT">
+        <table>
+            <tr>
+                <th>Time/Day</th>
+                <th>8 to 9 AM</th>
+                <th>9 to 10 AM</th>
+                <th>10 to 11 AM</th>
+                <th>11:30 AM to 12:30 PM</th>
+                <th>12:30 to 2 PM</th>
+                <th>2 to 3 PM</th>
+                <th>3 to 4 PM</th>
+            </tr>
+            <tr>
+                <td class="day">Mon</td>
+                <td></td>
+                <td>ITC</td>
+                <td>DSP</td>
+                <td>DSP</td>
+                <td id="lunch">Lunch Break</td>
+                <td>CS LAB</td>
+                <td>CS LAB</td>
+            </tr>
+            <tr>
+                <td class="day">Tue</td>
+                <td>OE</td>
+                <td>ITC</td>
+                <td>DN</td>
+                <td>DN</td>
+                <td id="lunch">Lunch Break</td>
+                <td>LPVLSI/WT</td>
+                <td>LPVLSI/WT</td>
+            </tr>
+            <tr>
+                <td class="day">Wed</td>
+                <td></td>
+                <td></td>
+                <td>OE</td>
+                <td>DSP</td>
+                <td id="lunch">Lunch Break</td>
+                <td>DN LAB</td>
+                <td>DN LAB</td>
+            </tr>
+            <tr>
+                <td class="day">Thu</td>
+                <td></td>
+                <td>DN</td>
+                <td>ITC</td>
+                <td>OE</td>
+                <td id="lunch">Lunch Break</td>
+                <td>ERTOS</td>
+                <td>LPVLSI/WT</td>
+            </tr>
+            <tr>
+                <td class="day">Fri</td>
+                <td></td>
+                <td>ERTOS</td>
+                <td>ERTOS</td>
+                <td></td>
+                <td id="lunch">Lunch Break</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <style>
+        .heading {
+            margin: auto;
+            text-align: center;
+            border: 4px solid red;
+            background-color: bisque;
+            width: 60%;
+        }
+
+        h1 {
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+
+        .TT {
+            margin: auto;
+            max-width: 1500px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 30px;
+            text-align: center;
+            background-color: azure;
+        }
+
+        .day {
+            background-color: rgb(247, 224, 232);
+        }
+
+        #lunch {
+            background-color: rgb(250, 242, 199);
+        }
+
+        th {
+            background-color: rgb(218, 224, 236);
+        }
+    </style>
+</body>
+
+</html>
