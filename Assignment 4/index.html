@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        header {
+            background-color: rgb(238, 209, 209);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(5, 5, 5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: rgb(210, 192, 211);
+            padding: 20px;
+            border: 2px solid black;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #d4f0f1;
+            height: 300px;
+            border: 2px solid black;
+
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(220, 223, 146);
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Sitanshu Shukla</h2>
+        <img src="https://dailysuperheroes.com/wp-content/uploads/2020/02/tony-stark.jpg" alt="batman.jpg">
+
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">My Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae tenetur itaque ad, molestiae
+                laudantium esse voluptas ab a eum voluptatum eos, error consequuntur. Qui saepe fugit modi a non?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia neque, obcaecati reprehenderit tempore
+                asperiores consectetur quae exercitationem, libero assumenda laudantium recusandae sequi dolores eaque
+                nobis a necessitatibus! Necessitatibus veniam doloribus facilis quod voluptas quia nam quo, labore atque
+                pariatur accusamus consequuntur delectus ut molestiae aspernatur hic rerum eveniet obcaecati. Tempore.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <p> Copyright 2021 by Sitanshu. All Rights Reserved.</p>
+        <p>NIT, Warangal 506004 | Phone - 8989445258</p>
+    </footer>
+
+</body>
+
+</html>
